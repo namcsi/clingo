@@ -103,7 +103,7 @@ jobs:
         run: python .github/adjust_version.py --release
 
       - name: Build wheels
-        uses: pypa/cibuildwheel@latest
+        uses: pypa/cibuildwheel
         env: ${{ matrix.cfg.env }}
 
       - uses: actions/upload-artifact@v3
